@@ -1,0 +1,35 @@
+.ecui-icon-box {
+	width: 25px;
+    height: 25px;
+	line-height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09) inset;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #fff;
+	font-size: 15px;
+}
+
+.column-ecui_icon .ecui-icon-box {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background: none;
+	box-shadow: none;
+}
+
+.ecui-icon-box.ecui-selected{
+    box-shadow: 0 0 0 3px #0085ba inset, 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.ecui-icon-select-container{
+	margin-top: 10px;
+	max-height: 200px;
+	overflow-y: scroll;
+	border: 1px solid #DADADA;
+	padding: 10px;
+}

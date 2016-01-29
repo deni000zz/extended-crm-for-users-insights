@@ -1,0 +1,23 @@
+.usin-note-sticky .usin-note-content{
+	background-color: #FDFAED;
+}
+
+.ecui-note-toggle-action{
+	display: none;
+	cursor: pointer;
+	margin-right: 4px;
+}
+
+.usin-note:hover .ecui-note-toggle-action{
+	display: inline-block;
+}
+
+
+.ecui-icon-tag {
+	width: 20px;
+	padding: 0;
+	font-size: 13px;
+	line-height: 20px;
+	box-shadow: none;
+	font-size: 17px;
+}

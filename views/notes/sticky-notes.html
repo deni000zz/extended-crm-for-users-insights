@@ -1,0 +1,4 @@
+<span  ng-controller="ecuiStickyNotesCtrl">
+	<span class="alignright ecui-stick-note ecui-note-toggle-action" ng-click="stick()" ng-if="!note.sticky">{{strings.stick}} | </span>
+	<span class="alignright ecui-unstick-note ecui-note-toggle-action" ng-click="unstick()" ng-if="note.sticky">{{strings.unstick}} |</span>
+</span>
