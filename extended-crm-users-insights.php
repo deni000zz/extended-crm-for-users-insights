@@ -128,7 +128,7 @@
 	 public function show_plugin_inactive_notice(){
 		?>
 	    <div class="notice update-nag">
-	        <p><?php _e( 'Extended CRM For Users Insights requires the Users Insights plugin to be active.', 'extended-crm-for-users-insights' ); ?></p>
+	        <p><?php _e( 'Extended CRM For Users Insights requires the <a href="https://usersinsights.com/" target="_blank">Users Insights plugin</a> to be active.', 'extended-crm-for-users-insights' ); ?></p>
 	    </div>
 	    <?php
 	 }
