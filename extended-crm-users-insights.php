@@ -66,6 +66,7 @@
 		$cfk = new ECUI_Custom_Fields_Keys();
 		$gi = new ECUI_Group_Icons();
 		$sn = new ECUI_Sticky_Notes($this->usin_page_slug, $this->capability);
+		new ECUI_Note_Fields();
 		 
 	 }
 	 
@@ -153,6 +154,7 @@
 		 include_once( 'includes/custom-fields/class-custom-fields-keys.php' );
 		 include_once( 'includes/group-icons/class-group-icons.php' );
 		 include_once( 'includes/notes/class-sticky-notes.php' );
+		 include_once( 'includes/notes/class-note-fields.php' );
 	 }
 	 
 	 /**
