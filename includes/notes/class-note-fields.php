@@ -18,8 +18,7 @@ class ECUI_Note_Fields{
 	public function init(){
 		add_filter('usin_fields', array($this , 'register_fields'));
 		add_filter('usin_db_map', array($this, 'filter_db_map'));
-		add_filter('usin_query_joins', array($this, 'filter_query_joins'));
-		add_filter('usin_user_query_select', array($this, 'filter_query_select'));
+		add_filter('usin_query_join_table', array($this, 'filter_query_joins'), 10, 2);
 	}
 	
 	public function register_fields($fields){
@@ -47,21 +46,18 @@ class ECUI_Note_Fields{
 		return $db_map;
 	}
 	
-	public function filter_query_joins($query_joins){
+	public function filter_query_joins($query_joins, $table){
 		global $wpdb;
 
-		
-		$query_joins .= "LEFT JOIN (SELECT $wpdb->postmeta.meta_value as user_id , MAX($wpdb->posts.post_date) as ecui_last_note_date FROM $wpdb->posts ".
+		if($table == 'ecui_notes'){
+		$query_joins .= " LEFT JOIN (SELECT $wpdb->postmeta.meta_value as user_id , MAX($wpdb->posts.post_date) as ecui_last_note_date FROM $wpdb->posts ".
 			"INNER JOIN $wpdb->postmeta ON $wpdb->posts.ID = $wpdb->postmeta.post_id AND $wpdb->postmeta.meta_key = '_usin_note_for'".
 			"WHERE $wpdb->posts.post_type = '$this->note_post_type' GROUP BY user_id) ".
 			"AS ecui_notes ON $wpdb->users.ID = ecui_notes.user_id";
+		}
 		
 
 		return $query_joins;
 	}
 	
-	public function filter_query_select($query_select){
-		$query_select.=', ecui_notes.ecui_last_note_date';
-		return $query_select;
-	}
 }

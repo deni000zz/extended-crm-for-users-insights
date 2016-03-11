@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Extended CRM For Users Insights
  * Description: Extends the CRM functionality of Users Insights
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: denizz
  * Text Domain: extended-crm-for-users-insights
  * License: GPLv2 or later
@@ -17,7 +17,7 @@
   */
  class ECUI_Initializer {
 	 
-	 protected $requires_usin_version = '2.0.1';
+	 protected $requires_usin_version = '2.1.0';
 	 protected $capability = 'list_users';
 	 protected $usin_page_slug = 'users_insights';
 	 

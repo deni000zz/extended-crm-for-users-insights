@@ -36,6 +36,12 @@ Extends the default CRM functionality and user management of the [Users Insights
 
 == Changelog ==
 
+= 1.1.1 =
+
+Release Date: March 11th, 2016
+
+* Added support for version 2.1.0 of Users Insights
+
 = 1.1.0 =
 
 Release Date: February 9th, 2016
