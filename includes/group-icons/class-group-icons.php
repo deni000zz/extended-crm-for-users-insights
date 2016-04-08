@@ -35,7 +35,7 @@ class ECUI_Group_Icons {
 	
 	protected function is_group_taxonomy_page(){
 		global $pagenow;
-		return !empty($_GET['taxonomy']) && $pagenow == 'edit-tags.php' && $_GET['taxonomy'] == self::$taxonomy;
+		return !empty($_GET['taxonomy']) && ($pagenow == 'edit-tags.php' || $pagenow =='term.php') && $_GET['taxonomy'] == self::$taxonomy;
 	}
 	
 	public function enqueue_assets(){
