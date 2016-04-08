@@ -1,8 +1,8 @@
 === Extended CRM for Users Insights ===
 Contributors: denizz
-Tags: crm, users, user, usergroups, usernotes, groups, notes, customfield, usermeta, management, usermanagement, usersinsights
+Tags: crm, users, user, usergroups, usernotes, groups, notes, customfield, usermeta, management, usermanagement, user management, usersinsights
 Requires at least: 4.4
-Tested up to: 4.4.1
+Tested up to: 4.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -35,6 +35,11 @@ Extends the default CRM functionality and user management of the [Users Insights
 
 
 == Changelog ==
+
+= 1.1.2 =
+
+Release Date: April 8th, 2016
+* WP 4.5 compatibility fix: detect the new edit term page name - https://make.wordpress.org/core/2016/03/07/changes-to-the-term-edit-page-in-wordpress-4-5/
 
 = 1.1.1 =
 
