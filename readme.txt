@@ -2,7 +2,7 @@
 Contributors: denizz
 Tags: crm, users, user, usergroups, usernotes, groups, notes, customfield, usermeta, management, usermanagement, user management, usersinsights
 Requires at least: 4.4
-Tested up to: 4.5
+Tested up to: 4.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,10 +12,10 @@ Extends the CRM functionality of Users Insights - adds new management options to
 == Description ==
 Extends the default CRM functionality and user management of the [Users Insights plugin](https://usersinsights.com/) with the following features:
 
-* User Notes: adds an option to create sticky notes. Each note in the user profile section has an option to be sticked to top. The sticky notes are in a different color so they can be different from the regular notes.
-* User Notes: adds a "Last Note Date" field to the Users Insights users table. It shows the date of the last note and allows to order and filter the user list by the last note date. This can be useful for the user management if you need to see the latest user notes.
-* Custom User Fields : improves the creation and management of the custom user fields by adding an option to select existing user meta keys. It lists all of the existing user meta keys, except the WordPress core keys and the private keys (starting with _). Just like the regular custom user fields, you can use these custom fields to filter or order the user list.
-* User Groups: adds an option to select an icon when creating a user group. After that, the group is displayed with the icon in the users table and user profile section. The group icons can be managed from the User Groups section of Users Insights.
+* User Notes: adds an option to create sticky notes. Each note in the [user profile section](https://usersinsights.com/wordpress-user-profile-pages/) has an option to be sticked to top. The sticky notes are in a different color so they can be different from the regular notes.
+* User Notes: adds a "Last Note Date" field to the Users Insights users table. It shows the date of the last note and allows to order and [filter the user list](https://usersinsights.com/wordpress-users-smart-filters/) by the last note date. This can be useful for the user management if you need to see the latest user notes.
+* Custom User Fields : improves the creation and management of the [custom user fields](https://usersinsights.com/wordpress-custom-user-fields/) by adding an option to select existing user meta keys. It lists all of the existing user meta keys, except the WordPress core keys and the private keys (starting with _). Just like the regular custom user fields, you can use these custom fields to filter or order the user list.
+* User Groups: adds an option to select an icon when creating a [user group](https://usersinsights.com/wordpress-user-groups/). After that, the group is displayed with the icon in the users table and user profile section. The group icons can be managed from the User Groups section of Users Insights.
 * User Groups: extends the default color options with darker colors, so that when icons are used for user groups, they can be better visible with darker colors.
 
 [Extended CRM for Users Insights on GitHub](https://github.com/deni000zz/extended-crm-for-users-insights) - help us improve Extended CRM for Users Insights, pull requests are welcome on GitHub
