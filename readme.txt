@@ -1,8 +1,8 @@
 === Extended CRM for Users Insights ===
 Contributors: denizz
-Tags: crm, users, user, usergroups, usernotes, groups, notes, customfield, usermeta, management, usermanagement, user management, usersinsights
+Tags: crm, users, user, user groups, user notes, groups, notes, custom field, user meta, management, user management, usersinsights
 Requires at least: 4.4
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
