@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Extends the CRM functionality of Users Insights - adds new management options to the user groups, user notes and custom user fields features
 
 == Description ==
-Extends the default CRM functionality and user management of the [Users Insights plugin](https://usersinsights.com/) with the following features:
+Extends the default CRM functionality and user management of the [Users Insights plugin](https://usersinsights.com/?utm_source=wprepo&utm_campaign=crm) with the following features:
 
 * User Notes: adds an option to create sticky notes. Each note in the [user profile section](https://usersinsights.com/wordpress-user-profile-pages/) has an option to be sticked to top. The sticky notes are in a different color so they can be different from the regular notes.
 * User Notes: adds a "Last Note Date" field to the Users Insights users table. It shows the date of the last note and allows to order and [filter the user list](https://usersinsights.com/wordpress-users-smart-filters/) by the last note date. This can be useful for the user management if you need to see the latest user notes.
