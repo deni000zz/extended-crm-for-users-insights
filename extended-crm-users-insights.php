@@ -4,6 +4,7 @@
  * Description: Extends the CRM functionality of Users Insights
  * Version: 1.2.0
  * Author: denizz
+ * Author URI: https://usersinsights.com/
  * Text Domain: extended-crm-for-users-insights
  * License: GPLv2 or later
  * Requires at least: 4.4
