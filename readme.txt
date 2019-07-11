@@ -37,6 +37,12 @@ Extends the default CRM functionality and user management of the [Users Insights
 
 == Changelog ==
 
+= 1.2.1 =
+
+Release Date: July 11th, 2019
+
+* Fixed: Note content filter not showing all search results in some cases
+
 = 1.2.0 =
 
 Release Date: March 7th, 2017

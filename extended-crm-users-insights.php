@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Extended CRM For Users Insights
  * Description: Extends the CRM functionality of Users Insights
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: denizz
  * Author URI: https://usersinsights.com/
  * Text Domain: extended-crm-for-users-insights
