@@ -54,7 +54,7 @@ class ECUI_Note_Fields{
 	
 	
 	public function filter_db_map($db_map){
-		$db_map['ecui_last_note_date'] = array('db_ref'=>'ecui_last_note_date', 'db_table'=>'ecui_notes', 'nulls_last'=>true, 'cast'=>'DATETIME');
+		$db_map['ecui_last_note_date'] = array('db_ref'=>'ecui_last_note_date', 'db_table'=>'ecui_last_note_dates', 'nulls_last'=>true, 'cast'=>'DATETIME');
 		$db_map['ecui_note_content'] = array('db_ref'=>'ecui_note_content', 'db_table'=>'ecui_notes');
 		return $db_map;
 	}
@@ -63,10 +63,15 @@ class ECUI_Note_Fields{
 		global $wpdb;
 
 		if($table == 'ecui_notes'){
-		$query_joins .= " LEFT JOIN (SELECT $wpdb->postmeta.meta_value as user_id , MAX($wpdb->posts.post_date) as ecui_last_note_date, $wpdb->posts.post_content AS ecui_note_content FROM $wpdb->posts ".
-			"INNER JOIN $wpdb->postmeta ON $wpdb->posts.ID = $wpdb->postmeta.post_id AND $wpdb->postmeta.meta_key = '_usin_note_for'".
-			"WHERE $wpdb->posts.post_type = '$this->note_post_type' GROUP BY user_id) ".
+		$query_joins .= " LEFT JOIN (SELECT $wpdb->postmeta.meta_value as user_id, $wpdb->posts.post_content AS ecui_note_content FROM $wpdb->posts ".
+			"INNER JOIN $wpdb->postmeta ON $wpdb->posts.ID = $wpdb->postmeta.post_id AND $wpdb->postmeta.meta_key = '_usin_note_for' ".
+			"WHERE $wpdb->posts.post_type = '$this->note_post_type') ".
 			"AS ecui_notes ON $wpdb->users.ID = ecui_notes.user_id";
+		}elseif($table == 'ecui_last_note_dates'){
+			$query_joins .= " LEFT JOIN (SELECT $wpdb->postmeta.meta_value as user_id , MAX($wpdb->posts.post_date) as ecui_last_note_date FROM $wpdb->posts ".
+			"INNER JOIN $wpdb->postmeta ON $wpdb->posts.ID = $wpdb->postmeta.post_id AND $wpdb->postmeta.meta_key = '_usin_note_for' ".
+			"WHERE $wpdb->posts.post_type = '$this->note_post_type' GROUP BY user_id) ".
+			"AS ecui_last_note_dates ON $wpdb->users.ID = ecui_last_note_dates.user_id";
 		}
 		
 
