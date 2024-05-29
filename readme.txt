@@ -1,6 +1,6 @@
 === Extended CRM for Users Insights ===
 Contributors: denizz
-Tags: crm, users, user, user groups, user notes, groups, notes, custom field, user meta, management, user management, users insights
+Tags: crm, user management, user, user meta, user groups
 Requires at least: 4.4
 Tested up to: 6.5
 Stable tag: trunk
